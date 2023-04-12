@@ -1,6 +1,6 @@
 /**
  * @file 03_control_flow.cpp
- * @brief control flow
+ * @brief control flow while-for-if
  * @copyright Copyright (c) 2023
  *
  * Change Logs:
@@ -10,6 +10,15 @@
  */
 #include <iostream>
 
+/**
+ * @brief 编译错误
+ *  syntax error:
+ *  type error:
+ *  declaration error:
+ *
+ *
+ */
+*/
 
 /**
  * @brief The application entry point.
@@ -20,6 +29,7 @@ int main() {
     int sum = 0;
     int value = 0;
 
+    /* Window：文件结束符：Ctrl+Z UNIX:Crtl+D */
     while (std::cin >> value) {
         sum += value;
     }
