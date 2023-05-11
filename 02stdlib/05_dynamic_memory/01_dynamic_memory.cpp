@@ -48,8 +48,20 @@
  * p.unique()    use_count() 为1 返回true 否则返回false
  * p.use_count() 返回与p共享对象的智能指针数量，主要用于调试
  *
+ *
+ * new delete
+ *  int *p(new int(42)); // int *p = new int(42);
+ *  //... use p
+ *  delete p;
+ *  p = nullptr;
+ *
+ * shared_ptr new
+ *  shared_ptr<double> p1;
+ *  shared_ptr<int> p2(new int(42));
+ *  // shared_ptr<int> p2 = new int(42); 错误必须使用直接初始化形式
+ *
+ *
 */
-
 
 /**
  * @brief The application entry point.
